@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+      html *
+      {
+
+        color: #000 !important;
+      }
+
+      body {
+          display: flex;
+          justify-content: center;
+          background-color: #19191f;
+          margin: 0;
+      }
+
+      .text {
+          background-color: #40E0D0;
+          white-space: pre-line;
+          font-family: sans-serif;
+          display: block;
+          font-size: 22px;
+          padding: 32px;
+          margin-top: 15vh;
+          min-width: 20vh;
+      }
+
+      a {
+          text-decoration: none;
+          color: inherit;
+      }
+
+      a:hover {
+          text-decoration: underline;
+      }
+
+      .at:before {
+          content: "@"
+      }
+
+      .unspaced {
+          letter-spacing: -0.17em;
+      }
+
+      .left {
+        position: relative;
+        float: left;
+        padding-right: 10px;
+      }
+
+      .right {
+        position: relative;
+        float: right;
+        padding-left: 10px;
+      }
+
+      @media only screen and (max-width: 500px) {
+          body {
+              background-color: #40E0D0;
+              display: block;
+          }
+
+          .text {
+              font-size: 22px;
+              padding: 24px;
+              margin: auto;
+          }
+
+          .break {
+              display: none;
+          }
+      }
+    </style>
+    <title>Adam's homepage</title>
+  </head>
+  <body>
+    <span class="text" style="white-space: pre-line; font-family: monospace">Adam Jedrzejewski
+      <span></span>
+      <span class="left">email</span><span class="right">adam at mail</span>
+      <span class="left">blog</span><a class="right" href="">maybe?</a>
+      <span class="left">github</span><a class="right" href="https://github.com/adamjedrzejewski">adamjedrzejewski</a>
+  </span>
+  </body>
+</html>
